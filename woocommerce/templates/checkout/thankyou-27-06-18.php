@@ -68,12 +68,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 					<strong><?php echo $order->get_order_number(); ?></strong>
 				</li>
 
-				<li class="woocommerce-order-overview__order order">
-					<?php $wing_tid = get_post_meta( $order->id, "wing_tid", true); ?>
-					<?php _e( 'Wing Transaction:', 'woocommerce' ); ?>
-					<strong><?php echo $wing_tid; ?></strong>
-				</li>
-
 				<li class="woocommerce-order-overview__date date">
 					<?php _e( 'Date:', 'woocommerce' ); ?>
 					<strong><?php echo wc_format_datetime( $order->get_date_created() ); ?></strong>
